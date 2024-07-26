@@ -25,9 +25,15 @@ class User(AbstractUser, BaseModel):
 
     email = models.EmailField(unique=True)
 
+    image = models.ImageField(upload_to="users", null=True, blank=True)
+
     position = models.CharField(
         max_length=64, choices=PositionChoices.choices, null=True, blank=True
     )
+    company = models.CharField(max_length=128, null=True, blank=True)
+    location = models.CharField(max_length=128, null=True, blank=True)
+
+    birth_date = models.DateField(null=True, blank=True)
 
     REQUIRED_FIELDS = []
     USERNAME_FIELD = "email"
