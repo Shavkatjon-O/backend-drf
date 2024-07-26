@@ -12,10 +12,10 @@ class PositionChoices(models.TextChoices):
     BUSINESS_OWNER = "business_owner", "Business Owner"
     PROJECT_MANAGER = "project_manager", "Project Manager"
     PRODUCT_MANAGER = "product_manager", "Product Manager"
-    QA_ENGINEER = "qa_engineer", "QA Engineer"
     SOFTWARE_ENGINEER = "software_engineer", "Software Engineer"
     FRONTEND_ENGINEER = "frontend_engineer", "Frontend Engineer"
     BACKEND_ENGINEER = "backend_engineer", "Backend Engineer"
+    QA_ENGINEER = "qa_engineer", "QA Engineer"
     DEVOPS_ENGINEER = "devops_engineer", "DevOps Engineer"
     UX_UI_DESIGNER = "ux_ui_designer", "UX/UI Designer"
 
