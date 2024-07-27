@@ -4,8 +4,8 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.utils import timezone
 
-from apps.common.models import BaseModel
-from apps.users.managers import UserManager
+from common.models import BaseModel
+from users.managers import UserManager
 
 
 class PositionChoices(models.TextChoices):

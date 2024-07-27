@@ -27,7 +27,7 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path("api/v1/users/", include("apps.users.urls")),
+    path("api/v1/users/", include("users.urls")),
 ]
 
 urlpatterns += [
